@@ -1,2 +1,4 @@
-package physics;public class Particle {
+package physics;
+
+public class Particle {
 }

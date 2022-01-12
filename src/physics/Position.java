@@ -1,41 +1,26 @@
 package physics;
 
 import java.awt.*;
+
 /**
- * Inherits java.awt.point, for storing the position of a particle. Also provides functionality for calculating distance between particles.
+ * Created by off999555 on 27/9/2558 at 22:30.
+ * Project Name: Particle Collision Simulator
+ * Extra field isn't needed now, so simply inheriting Point.Double is fine in this case.
  */
 public class Position extends Point.Double {
-    /**
-     * Default constructor
-     */
-    public Position(){
+    public Position() {
         this(0, 0);
     }
 
-    /**
-     * Parameterised constructor
-     * @param x x-position of particle
-     * @param y y-position of particle
-     */
-    public Position(double x, double y){
+    public Position(double x, double y) {
         super(x, y);
     }
 
-    /**
-     * Returns relative difference in x-position
-     * @param that particle that is compared with this
-     * @return double value, difference in x-position relative to self
-     */
-    public double delX(Position that){
+    public double diffX(Position that) {
         return this.x - that.x;
     }
 
-    /**
-     * 
-     * @param that particle that is compared with this
-     * @return double value, difference in y-position relative to self
-     */
-    public double delY(Position that){
+    public double diffY(Position that) {
         return this.y - that.y;
     }
 }

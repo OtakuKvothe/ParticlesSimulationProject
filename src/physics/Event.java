@@ -1,5 +1,9 @@
 package physics;
 
+/**
+ * Created by off999555 on 28/9/2558 at 0:43.
+ * Project Name: Particle Collision Simulator
+ */
 public class Event implements Comparable<Event> {
     private double time;
     private Particle a, b;
@@ -9,8 +13,8 @@ public class Event implements Comparable<Event> {
         this.time = time;
         this.a = a;
         this.b = b;
-        this.countA = a == null ? -1 : a.getNumberOfCollisions();
-        this.countB = b == null ? -1 : b.getNumberOfCollisions();
+        this.countA = a == null ? -1 : a.getCollisionCount();
+        this.countB = b == null ? -1 : b.getCollisionCount();
     }
 
     public double getTime() {
@@ -31,10 +35,8 @@ public class Event implements Comparable<Event> {
     }
 
     public boolean isValid() {
-        if (a != null && a.getNumberOfCollisions() != countA)
-            return false;
-        if (b != null && b.getNumberOfCollisions() != countB)
-            return false;
+        if (a != null && a.getCollisionCount() != countA) return false;
+        if (b != null && b.getCollisionCount() != countB) return false;
         return true;
     }
 }

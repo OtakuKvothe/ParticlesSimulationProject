@@ -1,4 +1,4 @@
-package standardLib;
+package helper;
 
 /******************************************************************************
  * Compilation:  javac StdDraw.java

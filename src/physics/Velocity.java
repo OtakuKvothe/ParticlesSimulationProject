@@ -1,8 +1,10 @@
 package physics;
 
 /**
- * For velocity of a particle in terms of x and y components.
- * Provides functionality for calculation of relative velocity
+ * Created by off999555 on 27/9/2558 at 22:32.
+ * Project Name: Particle Collision Simulator
+ * Velocity is a speed with direction
+ * ความเร็ว คือ อัตราเร็วที่มีทิศทาง
  */
 public class Velocity {
     double x;
@@ -17,31 +19,28 @@ public class Velocity {
         this.y = y;
     }
 
-    public void reverseX() {
+    public void flipX() {
         x *= -1;
     }
 
-    public void reverseY() {
+    public void flipY() {
         y *= -1;
     }
 
-    public double delX(Velocity that) {
+    public double diffX(Velocity that) {
         return this.x - that.x;
     }
 
-    public double delY(Velocity that) {
+    public double diffY(Velocity that) {
         return this.y - that.y;
     }
 
-    public void increaseInEnergy(double jx, double jy, double mass) {
-        System.out.println("Velocity Change: "+this);
-        System.err.println(x+" "+y);
+    public void increaseByEnergy(double jx, double jy, double mass) {
         x += jx / mass;
         y += jy / mass;
-        System.err.println(x+" "+y);
     }
 
-    public void decreaseInEnergy(double jx, double jy, double mass){
-        increaseInEnergy(-jx, -jy, mass);
+    public void decreaseByEnergy(double jx, double jy, double mass) {
+        increaseByEnergy(-jx, -jy, mass);
     }
 }

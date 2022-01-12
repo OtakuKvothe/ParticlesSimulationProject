@@ -2,11 +2,6 @@ package physics;
 
 import java.awt.*;
 
-/**
- * Created by off999555 on 27/9/2558 at 22:30.
- * Project Name: Particle Collision Simulator
- * Extra field isn't needed now, so simply inheriting Point.Double is fine in this case.
- */
 public class Position extends Point.Double {
     public Position() {
         this(0, 0);

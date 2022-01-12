@@ -1,9 +1,5 @@
 package physics;
 
-/**
- * Created by off999555 on 28/9/2558 at 0:43.
- * Project Name: Particle Collision Simulator
- */
 public class Event implements Comparable<Event> {
     private double time;
     private Particle a, b;

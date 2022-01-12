@@ -1,11 +1,5 @@
 package physics;
 
-/**
- * Created by off999555 on 27/9/2558 at 22:32.
- * Project Name: Particle Collision Simulator
- * Velocity is a speed with direction
- * ความเร็ว คือ อัตราเร็วที่มีทิศทาง
- */
 public class Velocity {
     double x;
     double y;

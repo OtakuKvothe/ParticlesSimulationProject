@@ -6,10 +6,6 @@ import helper.StdDraw;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-/**
- * Created by off999555 on 28/9/2558 at 0:50.
- * Project Name: Particle Collision Simulator
- */
 public class CollisionSystem {
     private PriorityQueue<Event> prioritizedEvents;
     private double simulationTime = 0.0d;

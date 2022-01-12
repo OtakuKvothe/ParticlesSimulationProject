@@ -6,11 +6,6 @@ import helper.StdRandom;
 
 import java.awt.*;
 
-/**
- * Created by off999555 on 27/9/2558 at 22:20.
- * Project Name: Particle Collision Simulator
- * Particle ในที่นี้คืออนุภาคที่มีมวล มีที่อยู่ มีความเร็ว เป็นอะไรก็ได้ที่มีลักษณะวงกลม ไม่ว่าจะเป็นบอล ลูกบาส โลก ดวงอาทิตย์หรืออะตอม
- */
 public class Particle {
     private final double radius;
     private final double mass;
@@ -20,9 +15,6 @@ public class Particle {
     private int collisionCount;
     private int order;
 
-    {
-//        order = StdRandom.uniform(10);
-    }
 
     public Particle() {
         position = new Position(StdRandom.uniform(0.0, 1.0), StdRandom.uniform(0.0, 1.0));

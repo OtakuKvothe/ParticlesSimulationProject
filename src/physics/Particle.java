@@ -12,6 +12,15 @@ public class Particle {
     private Position position;
     private Velocity velocity;
     private Color color;
+    
+    public Position getPosition() {
+        return position;
+    }
+
+    public Velocity getVelocity() {
+        return velocity;
+    }
+
     private int collisionCount;
     private int order;
 

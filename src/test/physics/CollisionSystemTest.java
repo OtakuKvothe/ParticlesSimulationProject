@@ -2,12 +2,14 @@ package test.physics;
 
 import org.junit.Test;
 
-import org.junit.Test;
+import physics.CollisionSystem;
 
 public class CollisionSystemTest {
     
+    CollisionSystem system;
+
     @Test
-    void testPredictCollision(){
+    public void testPredictCollision(){
 
     }
 }
